@@ -1,0 +1,37 @@
+<!-- <p>
+  {{ customer }}
+</p>
+<span>{{ customer.name }} | </span>
+<span>{{ customer.address }} | </span>
+<span>{{ customer.contact }} | </span> -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-6  col-xs-12 mt20">
+      <h5>Customer Details</h5>
+
+      <table class="table table-bordered mt20">
+        <thead class="thead-dark">
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Contact</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{ customer.name }}</td>
+            <td>{{ customer.address }}</td>
+            <td>{{ customer.contact }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="btn btn-info" (click)="showOrder(customer.id)">
+        Orders Details
+      </button>
+    </div>
+
+    <div class="col-md-6  col-xs-12 mt20" *ngIf="isClicked">
+      <app-order-details></app-order-details>
+    </div>
+  </div>
+</div>

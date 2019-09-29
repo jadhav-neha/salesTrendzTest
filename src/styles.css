@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.padding0 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.navabrbg {
+  background-color: #003f5c !important;
+}
+.sidenav {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 56px;
+  left: 0;
+  background-color: #343a40;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 15px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #fff;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+#sidebar.sidenav .active {
+  background: #ccc;
+  color: #333;
+  font-weight: bold;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}

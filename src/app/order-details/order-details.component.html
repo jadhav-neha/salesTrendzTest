@@ -1,0 +1,21 @@
+<!-- <p>
+  order-details works!
+</p>
+{{ orderdata | json }} -->
+
+<h5>Order Details</h5>
+
+<table class="table table-bordered mt20">
+  <thead class="thead-dark">
+    <tr>
+      <th>Order No.</th>
+      <th>Order Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{ orderdata.orderNo }}</td>
+      <td>{{ orderdata.orderStatus }}</td>
+    </tr>
+  </tbody>
+</table>
